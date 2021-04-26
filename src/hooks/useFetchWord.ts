@@ -1,34 +1,30 @@
-import { Dispatch, useEffect } from "react";
-import { getWord } from "../data";
-import { Action } from "../types";
+import { Dispatch, useEffect } from 'react'
+import { getWord } from '../data'
+import { Action } from '../types'
 
-function useFetchWord(
+function useFetchWord (
   fetchingNext: boolean,
   wordLibrary: string,
-  autoplaySound: boolean,
   dispatch: Dispatch<Action>
 ) {
   useEffect(
-    function fetchNext() {
+    function fetchNext () {
       if (fetchingNext) {
         (async () => {
-          let word = await getWord(wordLibrary);
+          const word = await getWord(wordLibrary)
           if (word == null) {
             dispatch({
-              type: "changeUserSetting",
-              payload: { wordLibrary: "01" },
-            });
-            return;
+              type: 'changeUserSetting',
+              payload: { wordLibrary: '01' }
+            })
+            return
           }
-          dispatch({ type: "initWord", payload: word });
-          if (autoplaySound) {
-            dispatch({ type: "playSound", payload: word.sound });
-          }
-        })();
+          dispatch({ type: 'initWord', payload: word })
+        })()
       }
     },
-    [wordLibrary, fetchingNext, autoplaySound]
-  );
+    [wordLibrary, fetchingNext]
+  )
 }
 
-export default useFetchWord;
+export default useFetchWord
