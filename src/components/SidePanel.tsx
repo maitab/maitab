@@ -10,7 +10,7 @@ export interface Props {
 }
 
 const USER_SETTINGS_TITLES = {
-  hideRomaji: 'Hide Romaji',
+  // hideRomaji: 'Hide Romaji',
   hideHiragana: 'Hide Hiragana',
   hideMeaning: 'Hide Meaning'
 }

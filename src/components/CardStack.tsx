@@ -33,13 +33,6 @@ const CardStack: React.FunctionComponent<Props> = (props: Props) => {
         hideRomaji={props.hideRomaji}
         hideMeaning={props.hideMeaning}
       />
-      <ActionBar>
-        <CardAction
-          text="Next"
-          icon={nextIcon}
-          onClick={() => dispatch({ type: 'switchNext' })}
-        />
-      </ActionBar>
     </>
   )
 }

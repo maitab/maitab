@@ -18,13 +18,6 @@ const Text = styled.p`
 
 const Footer = () => (
   <FooterSection>
-    <Text>
-      Install this Chrome Extension from{' '}
-      <a href="https://chrome.google.com/webstore/detail/mainichi-tango/alkncbflgoakllhkhkjpdabnbebejidl">
-        Chrome Web Store
-      </a>
-      .
-    </Text>
   </FooterSection>
 )
 

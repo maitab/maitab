@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useContext, useEffect, useRef, useState } from 'react'
 import styled, { keyframes, css } from 'styled-components'
+import Dispatch from '../context/Dispatch'
 import { Word } from '../types'
 import { getNextColor, getRandomColor } from '../utils/color'
 import ReactFuri from 'react-furi'
@@ -29,7 +30,7 @@ const CardSection = styled.section<{ bgColor: string }>`
   z-index: 10;
 `
 
-const Box = styled.div`
+const CardShape = styled.div`
   width: 100%;
   color: #222;
   border-radius: 8px;
@@ -102,6 +103,7 @@ font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'TakaoPゴ�
 `
 
 const Card: React.FunctionComponent<Props> = (props) => {
+  const dispatch = useContext(Dispatch)
   const cardRef = useRef<HTMLElement>(null)
   const [bgColor, setBgColor] = useState(getRandomColor())
 
@@ -122,9 +124,9 @@ const Card: React.FunctionComponent<Props> = (props) => {
 
   return (
     <CardSection ref={cardRef} bgColor={bgColor}>
-      <Box>
+      <CardShape onClick={() => dispatch({ type: 'switchNext' })}>
         <Image>
-          <img src={image} style={{ width: width, minHeight: '350px' }} />
+          <img src={image} style={{ width: width, minHeight: '350px', maxHeight: '420px' }} />
         </Image>
         <Text>
           <TitleBox>
@@ -156,7 +158,7 @@ const Card: React.FunctionComponent<Props> = (props) => {
             </Meaning>
           </MeaningBox>
         </Text>
-      </Box>
+      </CardShape>
     </CardSection>
   )
 }
