@@ -647,9 +647,9 @@
       "romaji": "kan",
       "english": "can",
       "category": "nature",
-      "image": "1474.svg",
       "uuid": "3b6af2b1-fa64-4530-9229-571e503fcd95",
-      "nounProjectIconId": "1474"
+      "nounProjectIconId": "38756",
+      "image": "38756-600.png"
     },
     {
       "kana": "蝋燭",
@@ -837,9 +837,9 @@
       "romaji": "kyō-ka-i",
       "english": "church",
       "category": "society",
-      "image": "292.svg",
       "uuid": "91676ddb-0588-4aff-9fcd-c5bc863309e1",
-      "nounProjectIconId": "292"
+      "nounProjectIconId": "3898284",
+      "image": "3898284-600.png"
     },
     {
       "kana": "タバコ",
@@ -1597,9 +1597,9 @@
       "romaji": "Fu-ro-su",
       "english": "floss",
       "category": "house",
-      "image": "13355-600.png",
       "uuid": "630f025c-e2b5-4a6e-a05f-3b2623d85d69",
-      "nounProjectIconId": "13355"
+      "nounProjectIconId": "1661484",
+      "image": "1661484-600.png"
     },
     {
       "kana": "小麦粉",
@@ -1647,9 +1647,9 @@
       "romaji": "ta-be-mo-no",
       "english": "food",
       "category": "nature",
-      "image": "4312.svg",
       "uuid": "74b80590-bd5e-4498-95a4-d0623bc86a24",
-      "nounProjectIconId": "4312"
+      "nounProjectIconId": "3526876",
+      "image": "3526876-600.png"
     },
     {
       "kana": "チョコレート",
@@ -1740,16 +1740,6 @@
       "image": "9101-600.png",
       "uuid": "c8cb12b8-1fad-42a5-ba48-7547c44fe25d",
       "nounProjectIconId": "9101"
-    },
-    {
-      "kana": "金曜日",
-      "furigana": "きんようび",
-      "romaji": "kin-yō-bi",
-      "english": "friday",
-      "category": "time",
-      "image": "37446-600.png",
-      "uuid": "1acbfcea-158d-4175-b94e-e7d7a13f8842",
-      "nounProjectIconId": "37446"
     },
     {
       "kana": "蛙",
@@ -2157,9 +2147,9 @@
       "romaji": "kō-ri",
       "english": "ice",
       "category": "nature",
-      "image": "139485-600.png",
       "uuid": "02089b98-c3f1-46bc-af0a-0e617733fb4e",
-      "nounProjectIconId": "139485"
+      "nounProjectIconId": "3768565",
+      "image": "3768565-600.png"
     },
     {
       "kana": "アイスクリーム",
@@ -2227,9 +2217,9 @@
       "romaji": "jū-sā",
       "english": "juicer",
       "category": "house",
-      "image": "19103-600.png",
       "uuid": "17255912-6c03-4eaa-8731-ac4f24c25473",
-      "nounProjectIconId": "19103"
+      "nounProjectIconId": "363170",
+      "image": "363170-600.png"
     },
     {
       "kana": "カヤック",
@@ -2737,9 +2727,9 @@
       "romaji": "ne-kku-re-su",
       "english": "necklace",
       "category": "people",
-      "image": "15004-600.png",
       "uuid": "effb0802-d1c6-4a07-b5c5-b6a726a793b2",
-      "nounProjectIconId": "15004"
+      "nounProjectIconId": "3880782",
+      "image": "3880782-600.png"
     },
     {
       "kana": "巣",
@@ -2807,9 +2797,9 @@
       "romaji": "ta-ma-ne-gi",
       "english": "onion",
       "category": "nature",
-      "image": "2334-600.png",
       "uuid": "0acdf3ff-f34f-4522-be9c-8dc13f5b54f2",
-      "nounProjectIconId": "2334"
+      "nounProjectIconId": "1993347",
+      "image": "1993347-600.png"
     },
     {
       "kana": "鯱",
@@ -3247,9 +3237,9 @@
       "romaji": "Yū-bin-kyo-ku",
       "english": "post office",
       "category": "city",
-      "image": "2404.svg",
       "uuid": "9d0b4a11-a795-4aa5-9761-7a6c84e85689",
-      "nounProjectIconId": "2404"
+      "nounProjectIconId": "1997783",
+      "image": "1997783-600.png"
     },
     {
       "kana": "鍋",
@@ -3532,16 +3522,6 @@
       "nounProjectIconId": "180256"
     },
     {
-      "kana": "土曜日",
-      "furigana": "どようび",
-      "romaji": "do-yō-bi",
-      "english": "saturday",
-      "category": "time",
-      "image": "4180-600.png",
-      "uuid": "eadbf326-2318-41b3-a2cf-7578d509f2f6",
-      "nounProjectIconId": "4180"
-    },
-    {
       "kana": "ソーセージ",
       "furigana": "",
       "romaji": "sō-sē-ji",
@@ -3577,9 +3557,9 @@
       "romaji": "Ga-ku-se-i-fu-ku",
       "english": "school uniform",
       "category": "people",
-      "image": "21974-600.png",
       "uuid": "62c9ec15-fdf6-4c74-ad48-59f5e03764f5",
-      "nounProjectIconId": "21974"
+      "nounProjectIconId": "3258120",
+      "image": "3258120-600.png"
     },
     {
       "kana": "科学",
@@ -3727,9 +3707,9 @@
       "romaji": "su-kā-to",
       "english": "skirt",
       "category": "people",
-      "image": "3314-600.png",
       "uuid": "696a18bd-c3ae-4489-b7de-227f0c857f3b",
-      "nounProjectIconId": "3314"
+      "nounProjectIconId": "2777572",
+      "image": "2777572-600.png"
     },
     {
       "kana": "スリッパ",
@@ -4022,16 +4002,6 @@
       "nounProjectIconId": "76"
     },
     {
-      "kana": "日曜日",
-      "furigana": "にちようび",
-      "romaji": "ni-chi-yō-bi",
-      "english": "sunday",
-      "category": "time",
-      "image": "2007435-600.png",
-      "uuid": "64f086cf-cb99-469b-9d92-fac2cd680c23",
-      "nounProjectIconId": "2007435"
-    },
-    {
       "kana": "向日葵",
       "furigana": "ひまわり",
       "romaji": "hi-ma-wa-ri",
@@ -4157,9 +4127,9 @@
       "romaji": "jō-za-i",
       "english": "tablet",
       "category": "health",
-      "image": "2002-600.png",
       "uuid": "a5054607-9694-4016-882b-fb649b4b9b34",
-      "nounProjectIconId": "2002"
+      "nounProjectIconId": "1140844",
+      "image": "1140844-600.png"
     },
     {
       "kana": "卓球",
@@ -4280,16 +4250,6 @@
       "image": "12418-600.png",
       "uuid": "ee11861f-4d12-41b3-9980-e917d1204e29",
       "nounProjectIconId": "12418"
-    },
-    {
-      "kana": "木曜日",
-      "furigana": "もくようび",
-      "romaji": "mo-ku-yō-bi",
-      "english": "thursday",
-      "category": "time",
-      "image": "82392-600.png",
-      "uuid": "9c4a1e12-5943-4cbd-b01c-fe3d68f8f3ea",
-      "nounProjectIconId": "82392"
     },
     {
       "kana": "切符",
@@ -4432,16 +4392,6 @@
       "nounProjectIconId": "173"
     },
     {
-      "kana": "火曜日",
-      "furigana": "かようび",
-      "romaji": "ka-yō-bi",
-      "english": "tuesday",
-      "category": "time",
-      "image": "82392-600.png",
-      "uuid": "2855a7e4-cb4b-446d-8e7d-3eca7c5c04c4",
-      "nounProjectIconId": "82392"
-    },
-    {
       "kana": "チューリップ",
       "furigana": "",
       "romaji": "chū-ri-ppu",
@@ -4477,9 +4427,9 @@
       "romaji": "da-i-ga-ku",
       "english": "university",
       "category": "city",
-      "image": "4407.svg",
       "uuid": "a92d4921-30e3-4c39-bf9e-68dc74d80db4",
-      "nounProjectIconId": "4407"
+      "nounProjectIconId": "1546155",
+      "image": "1546155-600.png"
     },
     {
       "kana": "掃除機",
@@ -4557,9 +4507,9 @@
       "romaji": "ku-ru-mi",
       "english": "walnut",
       "category": "nature",
-      "image": "3621-600.png",
       "uuid": "20d7d2c2-9076-4db5-bf1c-2e7fae0c21e0",
-      "nounProjectIconId": "3621"
+      "nounProjectIconId": "1704095",
+      "image": "1704095-600.png"
     },
     {
       "kana": "洗濯機",
@@ -4630,16 +4580,6 @@
       "image": "11847-600.png",
       "uuid": "b28490a2-e649-40fc-b600-77e3e772d2fc",
       "nounProjectIconId": "11847"
-    },
-    {
-      "kana": "水曜日",
-      "furigana": "すいようび",
-      "romaji": "su-i-yō-bi",
-      "english": "wednesday",
-      "category": "time",
-      "image": "82392-600.png",
-      "uuid": "de9e5a01-c1c2-48ff-9ad0-b5609f14f78b",
-      "nounProjectIconId": "82392"
     },
     {
       "kana": "鯨",
