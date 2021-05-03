@@ -8,6 +8,7 @@ export interface Word {
 
 export interface UserSettings {
   hideHiragana?: boolean;
+  hideRomaji?: boolean;
   hideMeaning?: boolean;
   wordLibrary?: string;
 }
