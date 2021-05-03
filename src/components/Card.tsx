@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useContext, useEffect, useRef, useState } from 'react'
-import styled, { keyframes, css } from 'styled-components'
+import styled from 'styled-components'
 import Dispatch from '../context/Dispatch'
 import { Word } from '../types'
 import { getNextColor, getRandomColor } from '../utils/color'
@@ -102,7 +102,7 @@ font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'TakaoPゴ�
   'MS Gothic', HiraKakuProN-W3, 'MotoyaLCedar', 'Droid Sans Japanese', sans-serif;
 `
 
-const Card: React.FunctionComponent<Props> = (props) => {
+const Card: React.FunctionComponent<Props> = (props : Props) => {
   const dispatch = useContext(Dispatch)
   const cardRef = useRef<HTMLElement>(null)
   const [bgColor, setBgColor] = useState(getRandomColor())

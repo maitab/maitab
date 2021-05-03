@@ -40,7 +40,7 @@ const Text = styled.span`
   align-items: center;
 `
 
-const CardAction: React.FunctionComponent<Props> = (props) => {
+const CardAction: React.FunctionComponent<Props> = (props : Props) => {
   return (
     <Wrapper onClick={props.onClick}>
       <Icon name={props.icon} />

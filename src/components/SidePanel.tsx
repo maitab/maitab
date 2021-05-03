@@ -66,7 +66,7 @@ const PanelLink = styled.a`
   padding: 6px 8px;
 `
 
-const SidePanel: React.FunctionComponent<Props> = (props) => {
+const SidePanel: React.FunctionComponent<Props> = (props : Props) => {
   const dispatch = useContext(Dispatch)
   return (
     <Panel isOpened={props.isOpened}>

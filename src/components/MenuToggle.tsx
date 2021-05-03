@@ -28,7 +28,7 @@ const MenuToggleBtn = styled.div<{ isActive: boolean }>`
   z-index: 1000;
 `
 
-const MenuToggle: React.FunctionComponent<Props> = (props) => {
+const MenuToggle: React.FunctionComponent<Props> = (props : Props) => {
   const dispatch = useContext(Dispatch)
   return (
     <MenuToggleBtn

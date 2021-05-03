@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const child_process = require('child_process')
+const childProcess = require('child_process')
 
 const rootDir = path.resolve(__dirname, '..')
 const buildDir = path.resolve(rootDir, 'build')
@@ -21,7 +21,7 @@ try {
 }
 
 console.log('Build started.')
-child_process.execSync('yarn build', { stdio: 'inherit' })
+childProcess.execSync('yarn build', { stdio: 'inherit' })
 console.log('Build done.')
 
 fs.mkdirSync(path.resolve(buildDir, 'logo'))
