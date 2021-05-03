@@ -36,15 +36,28 @@ const CardShape = styled.div`
   border-radius: 8px;
 `
 
-const Image = styled.div`
+const ImageWrapper = styled.div`
   margin: 2em 0 0 0;
   text-align: center;
+  width: 100%;
   height: 420px;
-
-  img > & {
-    max-height: 420px;
-  }
 `
+
+interface ImageProps {
+  src: string;
+}
+
+const Image: React.FunctionComponent<ImageProps> = ({ src }: ImageProps) => {
+  const imageName = src.substring(0, src.indexOf('.'))
+  const image = src.includes('png') ? images[imageName] : imagesSvg[imageName]
+  const width = src.includes('png') ? '100%' : '250px'
+
+  return <img src={image} style={{ width: width, minHeight: '350px', maxHeight: '420px' }} />
+
+  // return (
+  //   <div style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', width: width, minHeight: '350px', maxHeight: '420px' }}></div>
+  // )
+}
 
 const Text = styled.div`
   padding: 0 2.2em 2em 2.2em;
@@ -102,32 +115,21 @@ font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'TakaoPゴ�
   'MS Gothic', HiraKakuProN-W3, 'MotoyaLCedar', 'Droid Sans Japanese', sans-serif;
 `
 
-const Card: React.FunctionComponent<Props> = (props : Props) => {
+const Card: React.FunctionComponent<Props> = ({ word, hideMeaning, hideFurigana }: Props) => {
   const dispatch = useContext(Dispatch)
   const cardRef = useRef<HTMLElement>(null)
   const [bgColor, setBgColor] = useState(getRandomColor())
-
-  const { word } = props
 
   useEffect(() => {
     setBgColor(getNextColor())
   }, [word.uuid])
 
-  let imageName
-  let image
-  let width
-  if (word.image) {
-    imageName = word.image.substring(0, word.image.indexOf('.'))
-    image = word.image.includes('png') ? images[imageName] : imagesSvg[imageName]
-    width = word.image.includes('png') ? '100%' : '250px'
-  }
-
   return (
     <CardSection ref={cardRef} bgColor={bgColor}>
       <CardShape onClick={() => dispatch({ type: 'switchNext' })}>
-        <Image>
-          <img src={image} style={{ width: width, minHeight: '350px', maxHeight: '420px' }} />
-        </Image>
+        <ImageWrapper>
+          <Image src={word.image}></Image>
+        </ImageWrapper>
         <Text>
           <TitleBox>
             <Title>
@@ -140,7 +142,7 @@ const Card: React.FunctionComponent<Props> = (props : Props) => {
                       {
                         pairs.map(([furigana, text], index) => (
                           <ReactFuri.Pair key={index}>
-                            <Furigana hideFurigana={props.hideFurigana}>{furigana}</Furigana>
+                            <Furigana hideFurigana={hideFurigana}>{furigana}</Furigana>
                             <ReactFuri.Text>{text}</ReactFuri.Text>
                           </ReactFuri.Pair>
                         ))
@@ -153,7 +155,7 @@ const Card: React.FunctionComponent<Props> = (props : Props) => {
           </TitleBox>
           <Divider />
           <MeaningBox>
-            <Meaning hide={props.hideMeaning}>
+            <Meaning hide={hideMeaning}>
               <span>{word.english}</span>
             </Meaning>
           </MeaningBox>
