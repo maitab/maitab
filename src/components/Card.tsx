@@ -11,7 +11,7 @@ import imagesSvg from '../../images/*.svg'
 
 export interface Props {
   word: Word;
-  hideHiragana?: boolean;
+  hideFurigana?: boolean;
   hideRomaji?: boolean;
   hideMeaning?: boolean;
 }
@@ -52,14 +52,14 @@ const Text = styled.div`
 
 const TitleBox = styled.span<{}>``
 
-const Title = styled.div<{ hideHiragana?: boolean }>`
+const Title = styled.div<{ hideFurigana?: boolean }>`
   font-family: ${(props) => props.theme.jpFont};
   font-weight: bold;
   margin: 0;
 `
 
-const Furigana = styled(ReactFuri.Furi) <{ hideHiragana?: boolean }>`
-  visibility: ${(props) => (props.hideHiragana ? 'hidden' : 'visible')};
+const Furigana = styled(ReactFuri.Furi) <{ hideFurigana?: boolean }>`
+  visibility: ${(props) => (props.hideFurigana ? 'hidden' : 'visible')};
 
   ${TitleBox}:hover & {
     visibility: visible;
@@ -140,7 +140,7 @@ const Card: React.FunctionComponent<Props> = (props : Props) => {
                       {
                         pairs.map(([furigana, text], index) => (
                           <ReactFuri.Pair key={index}>
-                            <Furigana hideHiragana={props.hideHiragana}>{furigana}</Furigana>
+                            <Furigana hideFurigana={props.hideFurigana}>{furigana}</Furigana>
                             <ReactFuri.Text>{text}</ReactFuri.Text>
                           </ReactFuri.Pair>
                         ))

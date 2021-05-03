@@ -42,7 +42,7 @@ const App = () => {
         {store.word && (
           <CardStack
             word={store.word}
-            hideHiragana={store.userSettings.hideHiragana}
+            hideFurigana={store.userSettings.hideFurigana}
             hideRomaji={store.userSettings.hideRomaji}
             hideMeaning={store.userSettings.hideMeaning}
           />

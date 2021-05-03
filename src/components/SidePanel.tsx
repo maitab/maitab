@@ -11,7 +11,7 @@ export interface Props {
 
 const USER_SETTINGS_TITLES = {
   // hideRomaji: 'Hide Romaji',
-  hideHiragana: 'Hide Hiragana',
+  hideFurigana: 'Hide Furigana',
   hideMeaning: 'Hide Meaning'
 }
 

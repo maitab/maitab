@@ -10,7 +10,7 @@ const nextIcon = require('../../icons/next.png')
 
 export interface Props {
   word: Word;
-  hideHiragana?: boolean;
+  hideFurigana?: boolean;
   hideRomaji?: boolean;
   hideMeaning?: boolean;
 }
@@ -29,7 +29,7 @@ const CardStack: React.FunctionComponent<Props> = (props: Props) => {
     <>
       <Card
         word={props.word}
-        hideHiragana={props.hideHiragana}
+        hideFurigana={props.hideFurigana}
         hideRomaji={props.hideRomaji}
         hideMeaning={props.hideMeaning}
       />
