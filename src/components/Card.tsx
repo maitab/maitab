@@ -63,9 +63,9 @@ const Text = styled.div`
   padding: 0 2.2em 2em 2.2em;
 `
 
-const TitleBox = styled.span<{}>``
+const JapaneseBox = styled.span<{}>``
 
-const Title = styled.div<{ hideFurigana?: boolean }>`
+const Japanese = styled.div<{ hideFurigana?: boolean }>`
   font-family: ${(props) => props.theme.jpFont};
   font-weight: bold;
   margin: 0;
@@ -74,7 +74,7 @@ const Title = styled.div<{ hideFurigana?: boolean }>`
 const Furigana = styled(ReactFuri.Furi) <{ hideFurigana?: boolean }>`
   visibility: ${(props) => (props.hideFurigana ? 'hidden' : 'visible')};
 
-  ${TitleBox}:hover & {
+  ${JapaneseBox}:hover & {
     visibility: visible;
   }
 `
@@ -131,8 +131,8 @@ const Card: React.FunctionComponent<Props> = ({ word, hideMeaning, hideFurigana 
           <Image src={word.image}></Image>
         </ImageWrapper>
         <Text>
-          <TitleBox>
-            <Title>
+          <JapaneseBox>
+            <Japanese>
               <ReactFuri
                 word={word.kana}
                 reading={word.furigana}
@@ -151,8 +151,8 @@ const Card: React.FunctionComponent<Props> = ({ word, hideMeaning, hideFurigana 
                   )
                 }
               />
-            </Title>
-          </TitleBox>
+            </Japanese>
+          </JapaneseBox>
           <Divider />
           <MeaningBox>
             <Meaning hide={hideMeaning}>
