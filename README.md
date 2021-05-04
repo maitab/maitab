@@ -1,5 +1,7 @@
 # MaiTab
 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/maitab/maitab)
+
 Every (mai) new tab, you provides you an opportunity to learn a new word in Japanese.
 
 This project is forked from Tim Wang's [mainichi](https://github.com/timwangdev/mainichi) project.
