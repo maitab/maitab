@@ -1,7 +1,7 @@
 {
    "short_name": "maitab",
    "version": "1.0.0",
-   "manifest_version": 2,
+   "manifest_version": 3,
    "author": "maitab",
    "chrome_url_overrides": {
       "newtab": "index.html"
