@@ -5,13 +5,14 @@ import { Action } from '../types'
 function useFetchWord (
   fetchingNext: boolean,
   wordLibrary: string,
+  uuid: string,
   dispatch: Dispatch<Action>
 ) {
   useEffect(
     function fetchNext () {
       if (fetchingNext) {
         (async () => {
-          const word = await getWord(wordLibrary)
+          const word = await getWord(wordLibrary, uuid)
           if (word == null) {
             dispatch({
               type: 'changeUserSetting',
@@ -23,7 +24,7 @@ function useFetchWord (
         })()
       }
     },
-    [wordLibrary, fetchingNext]
+    [wordLibrary, fetchingNext, uuid]
   )
 }
 

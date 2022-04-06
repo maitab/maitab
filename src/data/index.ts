@@ -28,10 +28,18 @@ export async function migrateDb () {
   await setDbVersion()
 }
 
-export async function getWord (bookNo = '01') {
+export async function getWord (bookNo = '01', uuid = null) {
   const words = dataSets[bookNo].list
-  const idx = Math.floor(Math.random() * words.length)
-  const word = words[idx] as Word
+
+  let word: Word
+
+  if (uuid !== null) {
+    word = words.find((word, _index) => (word.uuid === uuid))
+  } else {
+    const idx = Math.floor(Math.random() * words.length)
+    word = words[idx] as Word
+  }
+
   return word
 }
 

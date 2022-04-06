@@ -26,6 +26,8 @@ const initialState: AppState = {
 }
 
 const App = () => {
+  const queryParams = new URLSearchParams(window.location.search)
+  const uuid = queryParams.get('uuid')
   const [store, dispatch] = useReducer(reducer, initialState)
 
   useInitDb(dispatch)
@@ -33,6 +35,7 @@ const App = () => {
   useFetchWord(
     store.fetchingNext,
     store.userSettings.wordLibrary,
+    uuid,
     dispatch
   )
 
