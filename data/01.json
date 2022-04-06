@@ -167,9 +167,9 @@
       "romaji": "bē-gu-ru",
       "english": "bagel",
       "category": "nature",
-      "image": "18154.svg",
       "uuid": "e9ec057e-2485-458f-95ca-84da9ea55449",
-      "nounProjectIconId": "18154"
+      "nounProjectIconId": "3563187",
+      "image": "3563187-600.png"
     },
     {
       "kana": "ベーカリー",
@@ -357,9 +357,9 @@
       "romaji": "gyū-ni-ku",
       "english": "beef",
       "category": "nature",
-      "image": "30270-600.png",
       "uuid": "fb30a666-2295-4d5c-ae0b-51e72b678d11",
-      "nounProjectIconId": "30270"
+      "nounProjectIconId": "36108",
+      "image": "36108-600.png"
     },
     {
       "kana": "ビール",
@@ -1297,9 +1297,9 @@
       "romaji": "Wa-shi",
       "english": "eagle",
       "category": "nature",
-      "image": "8426-600.png",
       "uuid": "f5e21e41-d04e-4bd5-b462-46114b8fa997",
-      "nounProjectIconId": "8426"
+      "nounProjectIconId": "2023765",
+      "image": "2023765-600.png"
     },
     {
       "kana": "耳",

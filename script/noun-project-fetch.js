@@ -10,7 +10,7 @@ const fs = require('fs')
 const NounProject = require('the-noun-project')
 const Downloader = require('nodejs-file-downloader')
 const path = require('path')
-const uuid = require('uuid');
+const uuid = require('uuid')
 
 const dataDir = path.resolve(__dirname, '../data')
 const imagesDir = path.resolve(__dirname, '../images')
